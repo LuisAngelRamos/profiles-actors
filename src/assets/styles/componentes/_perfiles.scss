@@ -2,10 +2,10 @@
 
 .perfil {
   width: 50%;
-  padding-top: 25px;
+  padding-top: 5px;
   color: $color-claro;
   background-color: $color-claro;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
   &__avatar {
@@ -29,7 +29,7 @@
   &__boton {
     display: block;
     width: 100px;
-    margin: 15px auto;
+    margin: 10px auto;
     padding: 4px 15px;
     border-radius: 20px;
     text-decoration: none;
@@ -42,7 +42,7 @@
 }
 .perfil__minibio {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 10px;
   h2 {
     @extend .perfil__nombre;
   }

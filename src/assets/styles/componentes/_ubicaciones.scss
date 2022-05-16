@@ -1,7 +1,7 @@
 @use "./globales.scss" as *;
 .ubicacion--perfil {
   height: 90px;
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
   padding: 20px 0 0 50px;
   @include caja;
   i {
