@@ -1,0 +1,35 @@
+@use "./globales.scss" as *;
+
+.articulos {
+    width: 50%;
+    height: 100vh;
+    padding: 50px 0 0 50px;
+    background-color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        padding: 50px 5%;
+    }
+}
+.articulo {
+    border-bottom: 3px solid $color-secundario;
+    color: $color-claro;
+    &__categoria {
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-secundario;
+        @include titulos($Fuente2);
+    }
+    &__titulo {
+        font-size: 20px;
+        @include titulos($Fuente2);
+    }
+    &__descripcion {
+        margin-bottom: 30px;
+        padding-right: 100px;
+    }
+}

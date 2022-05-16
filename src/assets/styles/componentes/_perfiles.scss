@@ -1,0 +1,52 @@
+@use "./globales.scss" as *;
+
+.perfil {
+  width: 50%;
+  padding-top: 25px;
+  color: $color-claro;
+  background-color: $color-claro;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  &__avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50em;
+  }
+  &__nombre {
+    text-align: center;
+    font-size: 20px !important;
+    color: $color-secundario;
+    @include titulos($Fuente2);
+  }
+  &__titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: get-opacity($color-variacion, .5);
+  }
+  &__boton {
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+    padding: 4px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: get-opacity($color-primario, .2);
+    border: 2px solid get-opacity($color-claro, .3);
+    color: $color-claro;
+    @include titulos($Fuente2);
+  }
+}
+.perfil__minibio {
+  margin: 0 auto;
+  padding-top: 30px;
+  h2 {
+    @extend .perfil__nombre;
+  }
+  h3 {
+    @extend .perfil__titulo;
+  }
+}
